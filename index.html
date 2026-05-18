@@ -8,58 +8,63 @@
 </head>
 <body>
 
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Suroso</div>
+    <div class="menu">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
 <div class="container">
 
     <!-- HERO -->
-    <section class="hero fade-in">
-        <h1>Suroso</h1>
-        <p>Power BI Developer | Data Analyst | Business Intelligence</p>
+    <section class="hero reveal">
+        <h1>Power BI Developer</h1>
+        <p>I help businesses turn data into actionable insights & smart decisions.</p>
         <div class="btn-group">
             <a href="mailto:suroso559@yahoo.com" class="btn">Hire Me</a>
-            <a href="https://wa.me/628118481208" class="btn secondary">WhatsApp</a>
+            <a href="https://wa.me/628118481208" class="btn outline">Chat WhatsApp</a>
         </div>
     </section>
 
     <!-- ABOUT -->
-    <section class="section fade-in">
+    <section id="about" class="section reveal">
         <h2>About Me</h2>
         <p>
-            I specialize in transforming raw data into meaningful insights using Power BI.
-            Experienced in building dashboards for sales, inventory, and business performance analysis.
+            Experienced in building data dashboards, analytics systems, and business intelligence solutions using Power BI, SQL, and Python.
         </p>
     </section>
 
-    <!-- SKILLS -->
-    <section class="section fade-in">
-        <h2>Skills</h2>
-        <div class="skills">
-            <span>Power BI</span>
-            <span>SQL</span>
-            <span>Python</span>
-            <span>Dynamics 365 BC</span>
-            <span>Data Visualization</span>
-        </div>
-    </section>
-
     <!-- PROJECTS -->
-    <section class="section fade-in">
-        <h2>Projects</h2>
+    <section id="projects" class="section reveal">
+        <h2>Featured Projects</h2>
 
-        <div class="card">
-            <h3>Sales Dashboard</h3>
-            <p>Interactive dashboard for analyzing revenue and trends.</p>
+        <div class="grid">
+            <div class="card">
+                <h3>Sales Dashboard</h3>
+                <p>Analyze revenue trends, KPIs, and performance.</p>
+            </div>
+
+            <div class="card">
+                <h3>Inventory Analytics</h3>
+                <p>Stock aging, slow-moving & fast-moving analysis.</p>
+            </div>
+
+            <div class="card">
+                <h3>Business Reporting</h3>
+                <p>Automated reporting for decision making.</p>
+            </div>
         </div>
-
-        <div class="card">
-            <h3>Inventory Analysis</h3>
-            <p>Stock aging & fast/slow moving product analysis.</p>
-        </div>
-
     </section>
 
-    <!-- POWER BI -->
-    <section class="section fade-in">
-        <h2>Live Dashboard</h2>
+    <!-- DASHBOARD -->
+    <section id="dashboard" class="section reveal">
+        <h2>Live Power BI Dashboard</h2>
+
         <div class="iframe-container">
             <iframe 
                 src="https://app.powerbi.com/view?r=YOUR_REPORT_ID"
@@ -70,13 +75,19 @@
     </section>
 
     <!-- CONTACT -->
-    <section class="section contact fade-in">
-        <h2>Contact</h2>
-        <p>Email: suroso559@yahoo.com</p>
-        <p>Location: Tangerang, Indonesia</p>
+    <section id="contact" class="section contact reveal">
+        <h2>Let's Work Together</h2>
+        <p>Available for freelance & full-time opportunities</p>
+
+        <div class="btn-group">
+            <a href="mailto:suroso559@yahoo.com" class="btn">Email Me</a>
+            <a href="https://wa.me/628118481208" class="btn outline">WhatsApp</a>
+        </div>
     </section>
 
 </div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
