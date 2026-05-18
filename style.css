@@ -1,0 +1,21 @@
+body {
+    font-family: Arial;
+    background: #f5f7fa;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #1a73e8;
+}
+
+h2 {
+    margin-top: 20px;
+}
