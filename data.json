@@ -1,0 +1,53 @@
+{
+  "job": "Power BI Developer",
+
+  "tagline": "Helping businesses automate reporting and make faster decisions using interactive dashboards",
+
+  "problems": [
+    {
+      "title": "Manual Reporting",
+      "desc": "You spend hours creating reports every week"
+    },
+    {
+      "title": "No Insights",
+      "desc": "Your business has data but no visibility"
+    },
+    {
+      "title": "Slow Decisions",
+      "desc": "Management decisions become slower without dashboards"
+    }
+  ],
+
+  "solutions": [
+    {
+      "title": "Dashboard Automation",
+      "desc": "Automate reporting and save time"
+    },
+    {
+      "title": "Real-Time Analytics",
+      "desc": "Monitor KPI instantly"
+    },
+    {
+      "title": "Interactive Reports",
+      "desc": "Drill-down analysis for management"
+    }
+  ],
+
+  "services": [
+    {
+      "title": "Basic Dashboard",
+      "desc": "1 dashboard with KPI",
+      "price": "$100"
+    },
+    {
+      "title": "Business Dashboard",
+      "desc": "Multi-page dashboard",
+      "price": "$250"
+    },
+    {
+      "title": "Full BI System",
+      "desc": "Automation + analytics",
+      "price": "$500+"
+    }
+  ]
+}
