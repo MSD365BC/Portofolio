@@ -1,38 +1,52 @@
 {
-  "name": "Suroso",
-  "job": "Power BI Developer",
-  "tagline": "Transforming data into business decisions & automation systems",
+  "job": "I Build Power BI Dashboards That Increase Profit",
+  "tagline": "Helping businesses automate reporting & make faster decisions",
 
-  "about": "I help companies turn raw data into actionable dashboards, reducing cost and increasing profit through data-driven decisions.",
-
-  "email": "suroso559@yahoo.com",
-  "whatsapp": "https://wa.me/628118481208",
-
-  "dashboard": "https://app.powerbi.com/view?r=YOUR_LINK",
-
-  "highlights": [
+  "problems": [
     {
-      "title": "Data Automation",
-      "desc": "Reduce manual reporting up to 80%"
+      "title": "Manual Reporting",
+      "desc": "You spend hours creating reports every week"
     },
     {
-      "title": "Dashboard Insight",
-      "desc": "Real-time business monitoring"
+      "title": "No Insight",
+      "desc": "Data exists but no clear meaning"
     },
     {
-      "title": "Decision Support",
-      "desc": "Help management take fast decisions"
+      "title": "Slow Decisions",
+      "desc": "No real-time dashboard for management"
     }
   ],
 
-  "projects": [
+  "solutions": [
     {
-      "title": "Sales Dashboard",
-      "desc": "Revenue, KPI, trend analysis"
+      "title": "Automated Dashboard",
+      "desc": "No more manual reporting"
     },
     {
-      "title": "Inventory System",
-      "desc": "Stock optimization & warehouse tracking"
+      "title": "KPI Monitoring",
+      "desc": "Track business performance easily"
+    },
+    {
+      "title": "Faster Decisions",
+      "desc": "Real-time data insights"
+    }
+  ],
+
+  "services": [
+    {
+      "title": "Basic Dashboard",
+      "desc": "1 dashboard + cleaning",
+      "price": "$100"
+    },
+    {
+      "title": "Business Dashboard",
+      "desc": "Multi-page + KPI",
+      "price": "$250"
+    },
+    {
+      "title": "Full BI System",
+      "desc": "Automation + analytics",
+      "price": "$500+"
     }
   ]
 }
