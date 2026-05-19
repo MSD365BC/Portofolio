@@ -1,60 +1,208 @@
-let config = {};
+let globalData = {};
 
-// LOAD CONFIG
-fetch('config.json')
+fetch("data.json")
 .then(res => res.json())
 .then(data => {
-  config = data;
+
+    globalData = data;
+
+    document.getElementById("tagline").innerText =
+    data.tagline;
+
+    renderProblems();
+    renderSolutions();
+    renderServices();
+
 });
 
-// ===== CONTACT MODAL =====
-const contactBtn = document.getElementById("contactBtn");
-const contactModal = document.getElementById("contactModal");
+/* RENDER PROBLEMS */
 
-contactBtn.onclick = () => {
-  contactModal.style.display = "block";
-};
+function renderProblems(){
 
-// ===== CLOSE MODAL =====
-window.addEventListener("click", (e) => {
-  if (e.target === contactModal) {
-    contactModal.style.display = "none";
-  }
-  if (e.target === imgModal) {
-    imgModal.style.display = "none";
-  }
+    let html = "";
+
+    globalData.problems.forEach(p => {
+
+        html += `
+        <div class="card">
+            <h3>❌ ${p.title}</h3>
+            <p>${p.desc}</p>
+        </div>
+        `;
+
+    });
+
+    document.getElementById("problems").innerHTML =
+    html;
+
+}
+
+/* RENDER SOLUTIONS */
+
+function renderSolutions(){
+
+    let html = "";
+
+    globalData.solutions.forEach(s => {
+
+        html += `
+        <div class="card">
+            <h3>✅ ${s.title}</h3>
+            <p>${s.desc}</p>
+        </div>
+        `;
+
+    });
+
+    document.getElementById("solutions").innerHTML =
+    html;
+
+}
+
+/* RENDER SERVICES */
+
+function renderServices(){
+
+    let html = "";
+
+    globalData.services.forEach(s => {
+
+        html += `
+        <div class="card">
+            <h3>${s.title}</h3>
+            <p>${s.desc}</p>
+            <strong>${s.price}</strong>
+        </div>
+        `;
+
+    });
+
+    document.getElementById("services-list").innerHTML =
+    html;
+
+}
+
+/* MODAL */
+
+function openModal(){
+
+    document.getElementById("modal").style.display =
+    "block";
+
+}
+
+function closeModal(){
+
+    document.getElementById("modal").style.display =
+    "none";
+
+}
+
+/* IMAGE MODAL */
+
+function openImage(src){
+
+    const modal =
+    document.getElementById("imgModal");
+
+    const img =
+    document.getElementById("imgPreview");
+
+    img.src = src;
+
+    modal.style.display = "flex";
+
+}
+
+function closeImage(){
+
+    document.getElementById("imgModal")
+    .style.display = "none";
+
+}
+
+/* CLICK OUTSIDE */
+
+window.addEventListener("click", function(event){
+
+    const modal =
+    document.getElementById("modal");
+
+    const imgModal =
+    document.getElementById("imgModal");
+
+    if(event.target === modal){
+
+        closeModal();
+
+    }
+
+    if(event.target === imgModal){
+
+        closeImage();
+
+    }
+
 });
 
-// ===== WHATSAPP =====
-const startBtn = document.getElementById("startProject");
+/* NAVBAR EFFECT */
 
-startBtn.onclick = () => {
-  const url = `https://wa.me/${config.phone}?text=${encodeURIComponent(config.message)}`;
-  window.open(url, "_blank");
-};
+window.addEventListener("scroll", function(){
 
-// ===== IMAGE ZOOM =====
-const images = document.querySelectorAll(".zoom");
-const imgModal = document.getElementById("imgModal");
-const modalImg = document.getElementById("modalImg");
+    let navbar =
+    document.querySelector(".navbar");
 
-images.forEach(img => {
-  img.onclick = () => {
-    imgModal.style.display = "block";
-    modalImg.src = img.src;
-  };
+    if(window.scrollY > 50){
+
+        navbar.style.background =
+        "rgba(2,6,23,.95)";
+
+    }else{
+
+        navbar.style.background =
+        "rgba(2,6,23,.7)";
+
+    }
+
 });
 
-// CLOSE BUTTON
-document.querySelector(".close").onclick = () => {
-  imgModal.style.display = "none";
-};
+/* TYPING EFFECT */
 
-// ===== SMOOTH SCROLL =====
-document.querySelectorAll("a[href^='#']").forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href"))
-      .scrollIntoView({ behavior: "smooth" });
-  });
+new Typed("#typing", {
+
+    strings:[
+        "Power BI Dashboards",
+        "Business Intelligence",
+        "Interactive Reports"
+    ],
+
+    typeSpeed:50,
+    backSpeed:30,
+    loop:true
+
+});
+
+/* LOADER */
+
+window.addEventListener("load", () => {
+
+    setTimeout(() => {
+
+        document.getElementById("loader")
+        .style.display = "none";
+
+    }, 500);
+
+});
+
+/* SCROLL REVEAL */
+
+ScrollReveal().reveal('.card', {
+
+    distance:'50px',
+    duration:1000,
+    easing:'ease',
+    origin:'bottom',
+    interval:100
+
 });
