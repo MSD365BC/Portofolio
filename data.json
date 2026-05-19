@@ -1,14 +1,14 @@
 {
-  "tagline": "Helping businesses automate reporting & increase profit with data",
+  "tagline": "Helping businesses automate reporting and increase profit using Power BI",
 
   "problems": [
     {
       "title": "Manual Reporting",
-      "desc": "Spending hours creating reports"
+      "desc": "Time wasted creating reports manually"
     },
     {
-      "title": "No Visibility",
-      "desc": "You have data but no insight"
+      "title": "No Insights",
+      "desc": "Data exists but no visibility"
     },
     {
       "title": "Slow Decisions",
@@ -22,12 +22,12 @@
       "desc": "Eliminate manual reporting"
     },
     {
-      "title": "Real-Time Data",
-      "desc": "Access insights instantly"
+      "title": "Real-Time Dashboard",
+      "desc": "Instant KPI monitoring"
     },
     {
-      "title": "Interactive Dashboard",
-      "desc": "Better decision making"
+      "title": "Interactive Reports",
+      "desc": "Better analysis for decisions"
     }
   ],
 
