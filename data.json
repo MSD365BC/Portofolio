@@ -1,0 +1,15 @@
+{
+  "name": "Suroso",
+  "job": "Power BI Developer",
+  "about": "Experienced in building dashboards and analytics systems.",
+  "projects": [
+    {
+      "title": "Sales Dashboard",
+      "desc": "Analyze revenue trends & KPIs"
+    },
+    {
+      "title": "Inventory Analytics",
+      "desc": "Stock & warehouse insights"
+    }
+  ]
+}
