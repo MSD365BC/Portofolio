@@ -8,11 +8,8 @@
 
 <meta name="description" content="Power BI Developer helping businesses automate reporting and increase profit through interactive dashboards"/>
 
-<!-- ✅ FAVICON (LOGO TAB BROWSER) -->
+<!-- FAVICON -->
 <link rel="icon" type="image/png" href="https://img.icons8.com/fluency/48/bar-chart.png">
-
-<!-- OPTIONAL: APPLE TOUCH ICON (iPhone/iPad) -->
-<link rel="apple-touch-icon" href="https://img.icons8.com/fluency/96/bar-chart.png">
 
 <link rel="stylesheet" href="style.css"/>
 
@@ -45,9 +42,7 @@
             <a href="#testimonials">Testimonials</a>
             <a class="contact-btn" onclick="openModal()">Contact</a>
         </div>
-        <div id="imgModal" class="img-modal" onclick="closeImage()">
-    <img id="imgPreview">
-</div>
+
     </div>
 </nav>
 
@@ -68,55 +63,13 @@
             <p id="tagline"></p>
 
             <div class="btn-group">
-                <a href="mailto:suroso559@yahoo.com" class="btn">
-                    Hire Me
-                </a>
-
-                <a href="https://wa.me/628118481208" class="btn outline">
-                    WhatsApp
-                </a>
-            </div>
-
-            <div class="stats">
-
-                <div class="stat-card">
-                    <h2>20+</h2>
-                    <p>Dashboards</p>
-                </div>
-
-                <div class="stat-card">
-                    <h2>10+</h2>
-                    <p>Clients</p>
-                </div>
-
-                <div class="stat-card">
-                    <h2>5★</h2>
-                    <p>Reviews</p>
-                </div>
-
+                <a href="mailto:suroso559@yahoo.com" class="btn">Hire Me</a>
+                <a href="https://wa.me/628118481208" class="btn outline">WhatsApp</a>
             </div>
 
         </div>
 
     </div>
-
-</section>
-
-<!-- PROBLEMS -->
-<section class="section" id="problem">
-
-    <h2>Business Problems</h2>
-
-    <div class="grid" id="problems"></div>
-
-</section>
-
-<!-- SOLUTIONS -->
-<section class="section" id="solution">
-
-    <h2>How I Help</h2>
-
-    <div class="grid" id="solutions"></div>
 
 </section>
 
@@ -127,37 +80,22 @@
 
     <div class="portfolio-grid">
 
-    <div class="portfolio-card">
-        <img src="https://blog.coupler.io/wp-content/uploads/2025/05/seo-dashboard-power-bi-1536x863.png" onclick="openImage(this.src)">
-        <div class="overlay">
-            Sales Analytics Dashboard
+        <div class="portfolio-card">
+            <img src="https://blog.coupler.io/wp-content/uploads/2025/05/seo-dashboard-power-bi-1536x863.png" onclick="openImage(this.src)">
+            <div class="overlay">Sales Analytics Dashboard</div>
         </div>
-    </div>
 
-    <div class="portfolio-card">
-        <img src="https://i.ytimg.com/vi/GIPiHhDtasM/maxresdefault.jpg" onclick="openImage(this.src)">
-        <div class="overlay">
-            Financial KPI Dashboard
+        <div class="portfolio-card">
+            <img src="https://i.ytimg.com/vi/GIPiHhDtasM/maxresdefault.jpg" onclick="openImage(this.src)">
+            <div class="overlay">Financial KPI Dashboard</div>
         </div>
-    </div>
 
-    <div class="portfolio-card">
-        <img src="https://blog.coupler.io/wp-content/uploads/2025/04/all-in-one-marketing-dashboard-power-bi-1536x864.png" onclick="openImage(this.src)">
-        <div class="overlay">
-            Data Analytics Dashboard
+        <div class="portfolio-card">
+            <img src="https://blog.coupler.io/wp-content/uploads/2025/04/all-in-one-marketing-dashboard-power-bi-1536x864.png" onclick="openImage(this.src)">
+            <div class="overlay">Data Analytics Dashboard</div>
         </div>
+
     </div>
-
-</div>
-
-</section>
-
-<!-- SERVICES -->
-<section class="section" id="services">
-
-    <h2>Services</h2>
-
-    <div class="grid" id="services-list"></div>
 
 </section>
 
@@ -169,16 +107,12 @@
     <div class="grid">
 
         <div class="card">
-            <p>
-                “Our reporting time decreased by 80%”
-            </p>
+            <p>“Our reporting time decreased by 80%”</p>
             <strong>- Retail Company</strong>
         </div>
 
         <div class="card">
-            <p>
-                “The dashboard helped management make faster decisions”
-            </p>
+            <p>“The dashboard helped management make faster decisions”</p>
             <strong>- Manufacturing Business</strong>
         </div>
 
@@ -191,49 +125,53 @@
 
     <h2>Let's Turn Your Data Into Profit</h2>
 
-    <p>
-        Build interactive dashboards that help your business grow faster
-    </p>
+    <p>Build interactive dashboards that help your business grow faster</p>
 
-    <a onclick="openModal()" class="btn big">
-        Start Project
-    </a>
+    <a onclick="openModal()" class="btn big">Start Project</a>
 
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-
-    <p>
-        © 2026 Suroso | Power BI Developer
-    </p>
-
+    <p>© 2026 Suroso | Power BI Developer</p>
 </footer>
 
 <!-- FLOATING WA -->
-<a href="https://wa.me/628118481208" class="floating-wa">
-    💬
-</a>
+<a href="https://wa.me/628118481208" class="floating-wa">💬</a>
 
-<!-- MODAL -->
+<!-- ================= MODALS ================= -->
+
+<!-- CONTACT MODAL -->
 <div id="modal" class="modal">
-
     <div class="modal-content">
-
-        <span class="close" onclick="closeModal()">
-            &times;
-        </span>
-
+        <span class="close" onclick="closeModal()">&times;</span>
         <h2>Contact Me</h2>
-
         <p>WhatsApp: 08118481208</p>
         <p>Email: suroso559@yahoo.com</p>
-
     </div>
-
 </div>
 
+<!-- IMAGE ZOOM MODAL (FIXED) -->
+<div id="imgModal" class="img-modal" onclick="closeImage()">
+    <img id="imgPreview">
+</div>
+
+<!-- SCRIPT -->
 <script src="script.js"></script>
+
+<script>
+function openImage(src){
+    const modal = document.getElementById("imgModal");
+    const img = document.getElementById("imgPreview");
+
+    img.src = src;
+    modal.style.display = "flex";
+}
+
+function closeImage(){
+    document.getElementById("imgModal").style.display = "none";
+}
+</script>
 
 </body>
 </html>
