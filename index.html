@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -7,9 +8,19 @@
 
 <title>Suroso | Power BI Developer</title>
 
+<meta name="description"
+content="Power BI Developer helping businesses automate reporting and increase profit through interactive dashboards">
+
+<link rel="icon"
+type="image/png"
+href="https://img.icons8.com/fluency/48/bar-chart.png">
+
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+rel="stylesheet">
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
@@ -18,66 +29,234 @@
 
 <body>
 
+<!-- LOADER -->
+<div id="loader">
+    <div class="spinner"></div>
+</div>
+
 <!-- NAVBAR -->
 <nav class="navbar">
+
     <div class="nav-container">
 
-        <div class="logo">Suroso</div>
+        <div class="logo">
+            Suroso
+        </div>
 
         <div class="menu">
+
             <a href="#problem">Problems</a>
             <a href="#solution">Solutions</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#services">Services</a>
 
-            <!-- FIXED BUTTON -->
-            <button id="contactBtn" class="contact-btn">
+            <button class="contact-btn"
+            onclick="openModal()">
                 Contact
             </button>
 
         </div>
+
     </div>
+
 </nav>
 
 <!-- HERO -->
 <section class="hero">
+
     <div class="hero-content">
-        <h1>I Build <span id="typing"></span></h1>
-        <p id="tagline"></p>
+
+        <div class="hero-text">
+
+            <span class="badge">
+                POWER BI FREELANCER
+            </span>
+
+            <h1>
+                I Build
+                <span id="typing"></span>
+            </h1>
+
+            <p id="tagline"></p>
+
+            <div class="btn-group">
+
+                <a href="mailto:suroso559@yahoo.com"
+                class="btn">
+                    Hire Me
+                </a>
+
+                <a
+                href="https://wa.me/628118481208?text=Halo%20saya%20ingin%20diskusi%20tentang%20dashboard%20Power%20BI"
+                class="btn outline"
+                target="_blank">
+
+                    WhatsApp
+
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
+
+</section>
+
+<!-- PROBLEMS -->
+<section class="section" id="problem">
+
+    <h2>Problems</h2>
+
+    <div class="grid" id="problems"></div>
+
+</section>
+
+<!-- SOLUTIONS -->
+<section class="section" id="solution">
+
+    <h2>Solutions</h2>
+
+    <div class="grid" id="solutions"></div>
+
+</section>
+
+<!-- PORTFOLIO -->
+<section class="section" id="portfolio">
+
+    <h2>Portfolio</h2>
+
+    <div class="portfolio-grid">
+
+        <div class="portfolio-card">
+
+            <img
+            src="https://blog.coupler.io/wp-content/uploads/2025/05/seo-dashboard-power-bi-1536x863.png"
+            onclick="openImage(this.src)">
+
+            <div class="overlay">
+                Sales Analytics Dashboard
+            </div>
+
+        </div>
+
+        <div class="portfolio-card">
+
+            <img
+            src="https://i.ytimg.com/vi/GIPiHhDtasM/maxresdefault.jpg"
+            onclick="openImage(this.src)">
+
+            <div class="overlay">
+                Financial KPI Dashboard
+            </div>
+
+        </div>
+
+        <div class="portfolio-card">
+
+            <img
+            src="https://blog.coupler.io/wp-content/uploads/2025/04/all-in-one-marketing-dashboard-power-bi-1536x864.png"
+            onclick="openImage(this.src)">
+
+            <div class="overlay">
+                Data Analytics Dashboard
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
 <!-- SERVICES -->
 <section class="section" id="services">
+
     <h2>Services</h2>
+
     <div class="grid" id="services-list"></div>
+
 </section>
+
+<!-- CTA -->
+<section class="cta">
+
+    <h2>
+        Let's Turn Your Data Into Profit
+    </h2>
+
+    <p>
+        Build interactive dashboards that help your business grow faster
+    </p>
+
+    <a
+    href="https://wa.me/628118481208?text=Halo,%20saya%20sedang%20membutuhkan%20seorang%20developer%20dashboard%20Power%20BI"
+    target="_blank"
+    class="btn big">
+
+        Start Project
+
+    </a>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <p>
+        © 2026 Suroso | Power BI Developer
+    </p>
+
+</footer>
+
+<!-- FLOATING WA -->
+<a
+href="https://wa.me/628118481208?text=Halo,%20saya%20ingin%20diskusi%20tentang%20dashboard%20Power%20BI"
+class="floating-wa"
+target="_blank">
+
+💬
+
+</a>
 
 <!-- CONTACT MODAL -->
 <div id="modal" class="modal">
+
     <div class="modal-content">
-        <span class="close" id="closeContact">&times;</span>
+
+        <span class="close"
+        onclick="closeModal()">
+            &times;
+        </span>
 
         <h2>Contact Me</h2>
 
-        <p>Email: suroso559@yahoo.com</p>
-        <p>Phone: +628118481208</p>
+        <div class="contact-info">
+
+            <p>
+                <strong>Email :</strong><br>
+                suroso559@yahoo.com
+            </p>
+
+            <p>
+                <strong>Phone :</strong><br>
+                +6281 1848 1208
+            </p>
+
+        </div>
+
     </div>
+
 </div>
 
-<!-- SERVICE MODAL -->
-<div id="serviceModal" class="modal">
-    <div class="modal-content">
-        <span class="close" id="closeService">&times;</span>
+<!-- IMAGE MODAL -->
+<div id="imgModal" class="img-modal">
 
-        <h2 id="serviceTitle"></h2>
-        <p id="serviceDesc"></p>
-        <div id="serviceFeatures"></div>
-        <h3 id="servicePrice"></h3>
-    </div>
+    <img id="imgPreview">
+
 </div>
 
 <script src="script.js"></script>
 
 </body>
 </html>
+
