@@ -8,12 +8,10 @@
 
 <meta name="description" content="Power BI Developer helping businesses automate reporting and increase profit through interactive dashboards"/>
 
-<!-- FAVICON -->
-<link rel="icon" type="image/png" href="https://img.icons8.com/fluency/48/bar-chart.png">
+<link rel="icon" href="https://img.icons8.com/fluency/48/bar-chart.png">
 
 <link rel="stylesheet" href="style.css"/>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -23,155 +21,112 @@
 
 <body>
 
-<!-- LOADER -->
-<div id="loader">
-    <div class="spinner"></div>
-</div>
+<div id="loader"><div class="spinner"></div></div>
 
-<!-- NAVBAR -->
 <nav class="navbar">
-    <div class="nav-container">
-
-        <div class="logo">Suroso</div>
-
-        <div class="menu">
-            <a href="#problem">Problems</a>
-            <a href="#solution">Solutions</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#services">Services</a>
-            <a href="#testimonials">Testimonials</a>
-            <a class="contact-btn" onclick="openModal()">Contact</a>
-        </div>
-
-    </div>
+<div class="nav-container">
+<div class="logo">Suroso</div>
+<div class="menu">
+<a href="#problem">Problems</a>
+<a href="#solution">Solutions</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#testimonials">Testimonials</a>
+<a class="contact-btn" onclick="openModal()">Contact</a>
+</div>
+</div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
+<div class="hero-content">
+<span class="badge">POWER BI FREELANCER</span>
 
-    <div class="hero-content">
+<h1>I Build <span id="typing"></span></h1>
 
-        <div class="hero-text">
+<p id="tagline" class="gradient-text"></p>
 
-            <span class="badge">POWER BI FREELANCER</span>
-
-            <h1>
-                I Build
-                <span id="typing"></span>
-            </h1>
-
-            <p id="tagline"></p>
-
-            <div class="btn-group">
-                <a href="mailto:suroso559@yahoo.com" class="btn">Hire Me</a>
-                <a href="https://wa.me/628118481208" class="btn outline">WhatsApp</a>
-            </div>
-
-        </div>
-
-    </div>
-
+<div class="btn-group">
+<a href="mailto:suroso559@yahoo.com" class="btn">Hire Me</a>
+<a href="https://wa.me/628118481208" class="btn outline">WhatsApp</a>
+</div>
+</div>
 </section>
 
-<!-- PORTFOLIO -->
+<section class="section" id="problem">
+<h2>Business Problems</h2>
+<div class="grid" id="problems"></div>
+</section>
+
+<section class="section" id="solution">
+<h2>Solutions</h2>
+<div class="grid" id="solutions"></div>
+</section>
+
+<section class="section" id="services">
+<h2>Services</h2>
+<div class="grid" id="services-list"></div>
+</section>
+
 <section class="section" id="portfolio">
+<h2>Portfolio</h2>
+<div class="portfolio-grid">
+<div class="portfolio-card">
+<img src="https://blog.coupler.io/wp-content/uploads/2025/05/seo-dashboard-power-bi-1536x863.png" onclick="openImage(this.src)">
+<div class="overlay">Sales Dashboard</div>
+</div>
 
-    <h2>Portfolio</h2>
+<div class="portfolio-card">
+<img src="https://i.ytimg.com/vi/GIPiHhDtasM/maxresdefault.jpg" onclick="openImage(this.src)">
+<div class="overlay">Financial Dashboard</div>
+</div>
 
-    <div class="portfolio-grid">
-
-        <div class="portfolio-card">
-            <img src="https://blog.coupler.io/wp-content/uploads/2025/05/seo-dashboard-power-bi-1536x863.png" onclick="openImage(this.src)">
-            <div class="overlay">Sales Analytics Dashboard</div>
-        </div>
-
-        <div class="portfolio-card">
-            <img src="https://i.ytimg.com/vi/GIPiHhDtasM/maxresdefault.jpg" onclick="openImage(this.src)">
-            <div class="overlay">Financial KPI Dashboard</div>
-        </div>
-
-        <div class="portfolio-card">
-            <img src="https://blog.coupler.io/wp-content/uploads/2025/04/all-in-one-marketing-dashboard-power-bi-1536x864.png" onclick="openImage(this.src)">
-            <div class="overlay">Data Analytics Dashboard</div>
-        </div>
-
-    </div>
-
+<div class="portfolio-card">
+<img src="https://blog.coupler.io/wp-content/uploads/2025/04/all-in-one-marketing-dashboard-power-bi-1536x864.png" onclick="openImage(this.src)">
+<div class="overlay">Marketing Dashboard</div>
+</div>
+</div>
 </section>
 
-<!-- TESTIMONIAL -->
 <section class="section" id="testimonials">
-
-    <h2>Testimonials</h2>
-
-    <div class="grid">
-
-        <div class="card">
-            <p>“Our reporting time decreased by 80%”</p>
-            <strong>- Retail Company</strong>
-        </div>
-
-        <div class="card">
-            <p>“The dashboard helped management make faster decisions”</p>
-            <strong>- Manufacturing Business</strong>
-        </div>
-
-    </div>
-
+<h2>Testimonials</h2>
+<div class="grid">
+<div class="card">
+<p>“Reporting time decreased by 80%”</p>
+<strong>- Retail Company</strong>
+</div>
+<div class="card">
+<p>“Helped management make faster decisions”</p>
+<strong>- Manufacturing</strong>
+</div>
+</div>
 </section>
 
-<!-- CTA -->
 <section class="cta">
-
-    <h2>Let's Turn Your Data Into Profit</h2>
-
-    <p>Build interactive dashboards that help your business grow faster</p>
-
-    <a onclick="openModal()" class="btn big">Start Project</a>
-
+<h2>Turn Your Data Into Profit</h2>
+<p>Build dashboards that drive decisions</p>
+<a onclick="openModal()" class="btn big">Start Project</a>
 </section>
 
-<!-- FOOTER -->
 <footer class="footer">
-    <p>© 2026 Suroso | Power BI Developer</p>
+<p>© 2026 Suroso</p>
 </footer>
 
-<!-- FLOATING WA -->
 <a href="https://wa.me/628118481208" class="floating-wa">💬</a>
 
-<!-- ================= MODALS ================= -->
-
-<!-- CONTACT MODAL -->
 <div id="modal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <h2>Contact Me</h2>
-        <p>WhatsApp: 08118481208</p>
-        <p>Email: suroso559@yahoo.com</p>
-    </div>
+<div class="modal-content">
+<span class="close" onclick="closeModal()">&times;</span>
+<h2>Contact</h2>
+<p>WhatsApp: 08118481208</p>
+<p>Email: suroso559@yahoo.com</p>
+</div>
 </div>
 
-<!-- IMAGE ZOOM MODAL (FIXED) -->
 <div id="imgModal" class="img-modal" onclick="closeImage()">
-    <img id="imgPreview">
+<img id="imgPreview">
 </div>
 
-<!-- SCRIPT -->
 <script src="script.js"></script>
-
-<script>
-function openImage(src){
-    const modal = document.getElementById("imgModal");
-    const img = document.getElementById("imgPreview");
-
-    img.src = src;
-    modal.style.display = "flex";
-}
-
-function closeImage(){
-    document.getElementById("imgModal").style.display = "none";
-}
-</script>
 
 </body>
 </html>
