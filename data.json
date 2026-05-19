@@ -2,86 +2,49 @@
   "tagline": "Helping businesses increase profit, reduce cost, and make faster decisions using Power BI dashboards",
 
   "problems": [
-    {
-      "id": 1,
-      "title": "Manual Reporting Takes Too Much Time",
-      "desc": "Your team spends hours every week creating Excel reports instead of focusing on growing the business."
-    },
-    {
-      "id": 2,
-      "title": "Data Exists But No Clear Insights",
-      "desc": "You have data from multiple sources, but no centralized dashboard to understand what is happening."
-    },
-    {
-      "id": 3,
-      "title": "Slow & Delayed Decision Making",
-      "desc": "Management decisions are slow because reports are not real-time and difficult to interpret."
-    },
-    {
-      "id": 4,
-      "title": "Uncontrolled Costs & Inventory",
-      "desc": "No visibility on stock movement and cost structure leads to inefficiency and lost profit."
-    }
+    { "title": "Manual Reporting", "desc": "You spend hours creating reports every week" },
+    { "title": "No Insights", "desc": "Data exists but no visibility" },
+    { "title": "Slow Decisions", "desc": "Management decisions are delayed" }
   ],
 
   "solutions": [
-    {
-      "id": 1,
-      "title": "Automated Reporting System",
-      "desc": "I build dashboards that automatically update your reports so you never need manual Excel work again."
-    },
-    {
-      "id": 2,
-      "title": "Real-Time Business Monitoring",
-      "desc": "Track sales, profit, inventory, and performance instantly in one centralized dashboard."
-    },
-    {
-      "id": 3,
-      "title": "Interactive & Drill-Down Analysis",
-      "desc": "Easily explore your data, identify trends, and find problems with interactive Power BI dashboards."
-    },
-    {
-      "id": 4,
-      "title": "Business-Focused Insights",
-      "desc": "Not just charts — I deliver insights that help you reduce cost, increase revenue, and improve decisions."
-    }
+    { "title": "Automation Dashboard", "desc": "Save hours with automated reports" },
+    { "title": "Real-Time Monitoring", "desc": "Track KPI instantly" },
+    { "title": "Interactive Analysis", "desc": "Drill down your data easily" }
   ],
 
   "services": [
     {
-      "id": 1,
       "title": "Starter Dashboard",
-      "desc": "Perfect for small businesses. Includes 1 dashboard with KPI visualization, clean design, and basic automation.",
+      "desc": "1 dashboard with KPI",
       "price": "$150",
       "cta": "Get Started"
     },
     {
-      "id": 2,
       "title": "Business Dashboard",
-      "desc": "Multi-page dashboard with advanced visuals, filtering, and real-time data integration.",
+      "desc": "Advanced multi-page dashboard",
       "price": "$350",
-      "cta": "Most Popular"
+      "badge": "Most Popular",
+      "cta": "Choose Plan"
     },
     {
-      "id": 3,
-      "title": "Advanced Analytics System",
-      "desc": "Full business intelligence solution including automation, multiple dashboards, and insights analysis.",
-      "price": "$700",
-      "cta": "Best Value"
-    },
-    {
-      "id": 4,
-      "title": "Custom Enterprise Solution",
-      "desc": "Tailored Power BI system based on your business needs including data modeling, ETL, and consulting.",
-      "price": "Custom Pricing",
+      "title": "Enterprise BI",
+      "desc": "Full automation & analytics",
+      "price": "$700+",
       "cta": "Contact Me"
+    }
+  ],
+
+  "testimonials": [
+    {
+      "name": "John D",
+      "company": "Retail Business",
+      "text": "Reporting time reduced by 80%. Highly recommended!"
     },
     {
-      "id": 5,
-      "title": "Free Consultation",
-      "desc": "Discuss your business problem and get solution ideas before starting the project.",
-      "price": "FREE",
-      "cta": "Book Now"
+      "name": "Sarah K",
+      "company": "FMCG Company",
+      "text": "Now we understand our business clearly."
     }
   ]
 }
