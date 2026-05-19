@@ -1,80 +1,66 @@
-// LOAD JSON DATA
+let globalData = {};
+
 fetch("data.json")
-  .then(res => res.json())
-  .then(data => {
+.then(res => res.json())
+.then(data => {
 
-    // ======================
-    // PROBLEMS
-    // ======================
-    const problemContainer = document.getElementById("problems");
+    globalData = data;
 
-    data.problems.forEach(item => {
-      problemContainer.innerHTML += `
-        <div class="card">
-          <h3>${item.title}</h3>
-          <p>${item.desc}</p>
-        </div>
-      `;
-    });
+    document.getElementById("tagline").innerText = data.tagline;
 
+    render("problems", data.problems);
+    render("solutions", data.solutions);
+    renderServices();
+    renderTestimonials();
 
-    // ======================
-    // SOLUTIONS
-    // ======================
-    const solutionContainer = document.getElementById("solutions");
-
-    data.solutions.forEach(item => {
-      solutionContainer.innerHTML += `
-        <div class="card">
-          <h3>${item.title}</h3>
-          <p>${item.desc}</p>
-        </div>
-      `;
-    });
-
-
-    // ======================
-    // SERVICES
-    // ======================
-    const serviceContainer = document.getElementById("services-list");
-
-    data.services.forEach(item => {
-      serviceContainer.innerHTML += `
-        <div class="card">
-          <h3>${item.title}</h3>
-          <p>${item.desc}</p>
-          <h4>${item.price}</h4>
-          <button class="btn">${item.cta || "Get Started"}</button>
-        </div>
-      `;
-    });
-
-
-    // ======================
-    // TYPING HERO
-    // ======================
-    new Typed("#typing", {
-      strings: [
-        "increase profit",
-        "reduce cost",
-        "automate reporting",
-        "make faster decisions"
-      ],
-      typeSpeed: 60,
-      backSpeed: 40,
-      loop: true
-    });
-
-  })
-  .catch(err => console.error("Error load JSON:", err));
-
-
-// ======================
-// SCROLL REVEAL (ANIMASI)
-// ======================
-ScrollReveal().reveal('.card', {
-  delay: 200,
-  distance: '40px',
-  origin: 'bottom',
-  interval: 100
 });
+
+function render(id, items){
+    let html = "";
+    items.forEach(i => {
+        html += `
+        <div class="card">
+            <h3>${i.title}</h3>
+            <p>${i.desc}</p>
+        </div>`;
+    });
+    document.getElementById(id).innerHTML = html;
+}
+
+function renderServices(){
+    let html = "";
+    globalData.services.forEach(s => {
+        html += `
+        <div class="card">
+            ${s.badge ? `<div class="badge-popular">${s.badge}</div>` : ""}
+            <h3>${s.title}</h3>
+            <p>${s.desc}</p>
+            <h2>${s.price}</h2>
+            <a href="https://wa.me/628118481208" target="_blank" class="btn">
+                ${s.cta}
+            </a>
+        </div>`;
+    });
+    document.getElementById("services-list").innerHTML = html;
+}
+
+function renderTestimonials(){
+    let html = "";
+    globalData.testimonials.forEach(t => {
+        html += `
+        <div class="card">
+            <p>"${t.text}"</p>
+            <strong>${t.name}</strong><br>
+            <small>${t.company}</small>
+        </div>`;
+    });
+    document.getElementById("testimonials").innerHTML = html;
+}
+
+function openModal(){
+    document.getElementById("modal").style.display = "block";
+}
+
+function closeModal(){
+    document.getElementById("modal").style.display = "none";
+}
