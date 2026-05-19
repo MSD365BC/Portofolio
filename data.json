@@ -1,0 +1,20 @@
+{
+  "about": {
+    "title": "About Me",
+    "desc": "Power BI Developer with expertise in analytics, SQL, and Python."
+  },
+  "projects": [
+    {
+      "title": "Sales Dashboard",
+      "desc": "Revenue & KPI Analysis"
+    },
+    {
+      "title": "Inventory Analytics",
+      "desc": "Stock aging & movement"
+    }
+  ],
+  "contact": {
+    "email": "suroso559@yahoo.com",
+    "wa": "08118481208"
+  }
+}
