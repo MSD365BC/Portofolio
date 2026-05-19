@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Suroso | Power BI Developer</title>
-
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,34 +12,55 @@
 <nav class="navbar">
     <div class="logo">Suroso</div>
     <div class="menu">
-        <a onclick="openModal('about')">About</a>
-        <a onclick="openModal('projects')">Projects</a>
-        <a onclick="openModal('dashboard')">Dashboard</a>
-        <a onclick="openModal('contact')">Contact</a>
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#services">Services</a>
+        <a href="#" onclick="openModal()">Contact</a>
     </div>
 </nav>
 
 <!-- HERO -->
-<section class="hero container">
-    <h1 id="job">Loading...</h1>
+<section class="hero">
+    <h1 id="job"></h1>
     <p id="tagline"></p>
 
     <div class="btn-group">
-        <a onclick="openModal('contact')" class="btn">Hire Me</a>
-        <a id="waLink" target="_blank" class="btn outline">WhatsApp</a>
+        <a onclick="openModal()" class="btn">Hire Me</a>
+        <a href="https://wa.me/628118481208" class="btn outline">WhatsApp</a>
     </div>
 </section>
 
-<!-- VALUE SECTION -->
-<section class="container section">
-    <div class="grid" id="highlights"></div>
+<!-- PROBLEM -->
+<section class="section" id="problem">
+    <h2>Do You Have This Problem?</h2>
+    <div class="grid" id="problems"></div>
+</section>
+
+<!-- SOLUTION -->
+<section class="section" id="solution">
+    <h2>How I Help You</h2>
+    <div class="grid" id="solutions"></div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+    <h2>Services</h2>
+    <div class="grid" id="services-list"></div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Let's Turn Your Data Into Profit</h2>
+    <a onclick="openModal()" class="btn big">Start Project</a>
 </section>
 
 <!-- MODAL -->
 <div id="modal" class="modal">
     <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
-        <div id="modal-body"></div>
+        <h2>Contact Me</h2>
+        <p>WhatsApp: 08118481208</p>
+        <p>Email: your@email.com</p>
     </div>
 </div>
 
