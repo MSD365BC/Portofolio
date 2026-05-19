@@ -6,12 +6,11 @@
 <title>Suroso | Power BI Developer</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar">
-    <div class="logo">Suroso.dev</div>
+    <div class="logo">Suroso</div>
     <div class="menu">
         <a href="#" onclick="openModal('about')">About</a>
         <a href="#" onclick="openModal('projects')">Projects</a>
@@ -23,23 +22,22 @@
 <!-- HERO -->
 <section class="hero">
     <h1>Power BI Developer</h1>
-    <p>Turning Data into Insight & Profit</p>
+    <p>Transforming raw data into business intelligence & decision systems</p>
 
     <div class="btn-group">
         <a href="#" onclick="openModal('contact')" class="btn">Hire Me</a>
-        <a href="#" onclick="openModal('projects')" class="btn outline">View Work</a>
+        <a href="https://wa.me/628118481208" class="btn outline">WhatsApp</a>
     </div>
 </section>
 
-<!-- MODAL -->
+<!-- MODALS -->
 <div id="modal" class="modal">
     <div class="modal-content">
-        <span class="close">&times;</span>
+        <span class="close" onclick="closeModal()">&times;</span>
         <div id="modal-body"></div>
     </div>
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
