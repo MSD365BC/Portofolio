@@ -1,46 +1,47 @@
 {
-  "job": "I Build Power BI Dashboards That Increase Profit",
-  "tagline": "Helping businesses automate reporting & make faster decisions",
+  "job": "Power BI Developer",
+
+  "tagline": "Helping businesses automate reporting and make faster decisions using interactive dashboards.",
 
   "problems": [
     {
       "title": "Manual Reporting",
-      "desc": "You spend hours creating reports every week"
+      "desc": "You spend hours creating reports every week."
     },
     {
-      "title": "No Insight",
-      "desc": "Data exists but no clear meaning"
+      "title": "No Insights",
+      "desc": "Your business has data but no visibility."
     },
     {
       "title": "Slow Decisions",
-      "desc": "No real-time dashboard for management"
+      "desc": "Management decisions become slower without dashboards."
     }
   ],
 
   "solutions": [
     {
-      "title": "Automated Dashboard",
-      "desc": "No more manual reporting"
+      "title": "Dashboard Automation",
+      "desc": "Automate reporting and save time."
     },
     {
-      "title": "KPI Monitoring",
-      "desc": "Track business performance easily"
+      "title": "Real-Time Analytics",
+      "desc": "Monitor KPI instantly."
     },
     {
-      "title": "Faster Decisions",
-      "desc": "Real-time data insights"
+      "title": "Interactive Reports",
+      "desc": "Drill-down analysis for management."
     }
   ],
 
   "services": [
     {
       "title": "Basic Dashboard",
-      "desc": "1 dashboard + cleaning",
+      "desc": "1 dashboard with KPI",
       "price": "$100"
     },
     {
       "title": "Business Dashboard",
-      "desc": "Multi-page + KPI",
+      "desc": "Multi-page dashboard",
       "price": "$250"
     },
     {
