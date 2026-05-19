@@ -61,3 +61,12 @@ function openModal() {
 function closeModal() {
     document.getElementById("modal").style.display = "none";
 }
+
+window.addEventListener("scroll", function() {
+    let navbar = document.querySelector(".navbar");
+    if (window.scrollY > 50) {
+        navbar.style.background = "rgba(2,6,23,0.95)";
+    } else {
+        navbar.style.background = "rgba(2,6,23,0.7)";
+    }
+});
