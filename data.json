@@ -37,43 +37,17 @@
     {
       "title": "Basic Dashboard",
       "desc": "1 dashboard with KPI",
-      "longDesc": "Simple dashboard for monitoring your main business KPI with clean visualization and responsive layout.",
-      "price": "$100",
-      "features": [
-        "1 Interactive Dashboard",
-        "KPI Monitoring",
-        "Responsive Design",
-        "Basic Charts",
-        "1 Revision"
-      ]
+      "price": "$100"
     },
-
     {
       "title": "Business Dashboard",
       "desc": "Multi-page dashboard",
-      "longDesc": "Advanced dashboard solution for businesses needing multiple reports, filtering, drill-down analytics, and automation.",
-      "price": "$250",
-      "features": [
-        "Multi-page Dashboard",
-        "Advanced Filters",
-        "Interactive Charts",
-        "Data Modeling",
-        "3 Revisions"
-      ]
+      "price": "$250"
     },
-
     {
       "title": "Full BI System",
       "desc": "Automation + analytics",
-      "longDesc": "Complete Business Intelligence solution with automation pipeline, analytics integration, and executive reporting system.",
-      "price": "$500+",
-      "features": [
-        "Full BI System",
-        "Data Automation",
-        "SQL Integration",
-        "Executive Dashboard",
-        "Unlimited Revision"
-      ]
+      "price": "$500+"
     }
   ]
 }
