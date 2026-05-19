@@ -15,6 +15,7 @@ fetch("data.json")
 
 });
 
+/* RENDER */
 function render(id, items){
     let html = "";
     items.forEach(i => {
@@ -57,10 +58,23 @@ function renderTestimonials(){
     document.getElementById("testimonials").innerHTML = html;
 }
 
+/* MODAL */
 function openModal(){
     document.getElementById("modal").style.display = "block";
 }
-
 function closeModal(){
     document.getElementById("modal").style.display = "none";
 }
+
+/* SCROLL REVEAL */
+function revealOnScroll(){
+    const reveals = document.querySelectorAll(".reveal");
+    reveals.forEach(el => {
+        const windowHeight = window.innerHeight;
+        const elementTop = el.getBoundingClientRect().top;
+        if(elementTop < windowHeight - 100){
+            el.classList.add("active");
+        }
+    });
+}
+window.addEventListener("scroll", revealOnScroll);
