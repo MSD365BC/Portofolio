@@ -3,151 +3,71 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Suroso | Power BI Expert</title>
-
-<meta name="description"
-content="I help businesses increase profit and automate reporting using Power BI dashboards">
-
+<title>Suroso | Power BI Specialist</title>
 <link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="https://unpkg.com/scrollreveal"></script>
-
 </head>
 
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar">
-    <div class="nav-container">
-        <div class="logo">Suroso</div>
-
-        <div class="menu">
-            <a href="#problem">Problems</a>
-            <a href="#solution">Solutions</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#services">Services</a>
-
-            <a href="mailto:suroso559@yahoo.com?subject=Power%20BI%20Project&body=Hi%20Suroso,%0AI%20want%20to%20discuss%20a%20project"
-            class="contact-btn">
-            Hire Me
-            </a>
-        </div>
+    <div class="logo">Suroso</div>
+    <div class="menu">
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#services">Services</a>
+        <a href="#" onclick="openModal()">Contact</a>
     </div>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
-    <div class="hero-content">
-
-        <span class="badge">POWER BI EXPERT</span>
-
-        <h1>
-            I Help Businesses<br>
-            <span id="typing"></span>
-        </h1>
-
-        <p>
-            Transforming raw data into insights that increase profit and speed up decision making
-        </p>
-
-        <div class="btn-group">
-            <a href="mailto:suroso559@yahoo.com?subject=Power%20BI%20Project"
-            class="btn">
-            🚀 Get Free Consultation
-            </a>
-
-            <a href="https://wa.me/628118481208"
-            class="btn outline"
-            target="_blank">
-            WhatsApp
-            </a>
-        </div>
-
-    </div>
-</section>
+<header class="hero">
+    <h1 id="tagline"></h1>
+    <a href="#" onclick="openModal()" class="btn">Hire Me</a>
+    <a href="https://wa.me/628118481208" target="_blank" class="btn outline">WhatsApp</a>
+</header>
 
 <!-- PROBLEM -->
-<section class="section" id="problem">
-    <h2>Business Problems</h2>
+<section id="problem" class="section">
+    <h2>Problems</h2>
     <div class="grid" id="problems"></div>
 </section>
 
 <!-- SOLUTION -->
-<section class="section" id="solution">
-    <h2>Solutions I Provide</h2>
+<section id="solution" class="section">
+    <h2>Solutions</h2>
     <div class="grid" id="solutions"></div>
 </section>
 
-<!-- PORTFOLIO -->
-<section class="section" id="portfolio">
-    <h2>Case Studies</h2>
-
-    <div class="grid">
-
-        <div class="card">
-            <h3>Sales Dashboard</h3>
-            <p>Manual reporting took 5 hours/week</p>
-            <p><strong>Solution:</strong> Automated Power BI</p>
-            <p><strong>Result:</strong> 80% time reduction</p>
-        </div>
-
-        <div class="card">
-            <h3>Inventory Analytics</h3>
-            <p>Stock overstock & dead inventory</p>
-            <p><strong>Solution:</strong> Dashboard monitoring</p>
-            <p><strong>Result:</strong> Cost reduced significantly</p>
-        </div>
-
-    </div>
-
-</section>
-
 <!-- SERVICES -->
-<section class="section" id="services">
-    <h2>Services & Pricing</h2>
+<section id="services" class="section">
+    <h2>Services</h2>
     <div class="grid" id="services-list"></div>
 </section>
 
-<!-- TRUST -->
+<!-- TESTIMONIAL -->
 <section class="section">
-    <h2>Why Choose Me</h2>
-
-    <div class="grid">
-        <div class="card">
-            <h3>⚡ Fast Delivery</h3>
-            <p>3–7 days project delivery</p>
-        </div>
-        <div class="card">
-            <h3>📊 Business Focused</h3>
-            <p>Focus on profit, not just dashboard</p>
-        </div>
-        <div class="card">
-            <h3>🤝 Support</h3>
-            <p>After project support included</p>
-        </div>
-    </div>
+    <h2>What Clients Say</h2>
+    <div class="grid" id="testimonials"></div>
 </section>
 
-<!-- CTA -->
-<section class="cta">
-    <h2>🚀 Get Your Free Dashboard Consultation</h2>
-    <p>Let’s build a system that helps your business grow faster</p>
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal()" class="close">&times;</span>
+    <h2>Contact Me</h2>
+    <form action="mailto:suroso559@yahoo.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn">Send Email</button>
+    </form>
+  </div>
+</div>
 
-    <a href="mailto:suroso559@yahoo.com?subject=Free%20Consultation"
-    class="btn big">
-    Start Now
-    </a>
-</section>
-
-<footer class="footer">
-    <p>© 2026 Suroso | Power BI Expert</p>
-</footer>
+<!-- FLOATING WA -->
+<a href="https://wa.me/628118481208" target="_blank" class="floating-wa">💬</a>
 
 <script src="script.js"></script>
-
 </body>
 </html>
