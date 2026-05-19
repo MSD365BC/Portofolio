@@ -163,3 +163,15 @@ ScrollReveal().reveal('.card', {
     interval:100
 
 });
+
+function openImage(src){
+    const modal = document.getElementById("imgModal");
+    const img = document.getElementById("imgPreview");
+
+    img.src = src;
+    modal.style.display = "flex";
+}
+
+function closeImage(){
+    document.getElementById("imgModal").style.display = "none";
+}
