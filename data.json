@@ -1,51 +1,64 @@
 {
-  "tagline": "Helping businesses increase profit and automate reporting using Power BI",
+  "tagline": "Helping businesses increase profit, reduce cost, and make faster decisions using Power BI dashboards",
 
   "problems": [
     {
-      "title": "Manual Reporting",
-      "desc": "Spending hours creating reports manually every week"
+      "title": "Manual Reporting Takes Too Much Time",
+      "desc": "Your team spends hours every week creating Excel reports instead of focusing on growing the business."
     },
     {
-      "title": "No Business Insight",
-      "desc": "Data exists but no clear insights to take action"
+      "title": "Data Exists But No Clear Insights",
+      "desc": "You have data from multiple sources, but no centralized dashboard to understand what is happening."
     },
     {
-      "title": "Slow Decision Making",
-      "desc": "Management decisions are delayed due to lack of real-time data"
+      "title": "Slow & Delayed Decision Making",
+      "desc": "Management decisions are slow because reports are not real-time and difficult to interpret."
+    },
+    {
+      "title": "Uncontrolled Costs & Inventory",
+      "desc": "No visibility on stock movement and cost structure leads to inefficiency and lost profit."
     }
   ],
 
   "solutions": [
     {
-      "title": "Automated Dashboards",
-      "desc": "Save hours by automating reports"
+      "title": "Automated Reporting System",
+      "desc": "I build dashboards that automatically update your reports so you never need manual Excel work again."
     },
     {
-      "title": "Real-Time Monitoring",
-      "desc": "Track KPI instantly anytime"
+      "title": "Real-Time Business Monitoring",
+      "desc": "Track sales, profit, inventory, and performance instantly in one centralized dashboard."
     },
     {
-      "title": "Interactive Analysis",
-      "desc": "Drill-down insights for better decisions"
+      "title": "Interactive & Drill-Down Analysis",
+      "desc": "Easily explore your data, identify trends, and find problems with interactive Power BI dashboards."
+    },
+    {
+      "title": "Business-Focused Insights",
+      "desc": "Not just charts — I deliver insights that help you reduce cost, increase revenue, and improve decisions."
     }
   ],
 
   "services": [
     {
-      "title": "Basic Dashboard",
-      "desc": "Simple KPI dashboard",
+      "title": "Starter Dashboard",
+      "desc": "Perfect for small businesses. Includes 1 dashboard with KPI visualization, clean design, and basic automation.",
       "price": "$150"
     },
     {
       "title": "Business Dashboard",
-      "desc": "Multi-page analytics system",
-      "price": "$300"
+      "desc": "Multi-page dashboard with advanced visuals, filtering, and real-time data integration.",
+      "price": "$350"
     },
     {
-      "title": "Full BI Solution",
-      "desc": "Automation + analytics + consulting",
-      "price": "$700+"
+      "title": "Advanced Analytics System",
+      "desc": "Full business intelligence solution including automation, multiple dashboards, and insights analysis.",
+      "price": "$700"
+    },
+    {
+      "title": "Custom Enterprise Solution",
+      "desc": "Tailored Power BI system based on your business needs including data modeling, ETL, and consulting.",
+      "price": "Custom Pricing"
     }
   ]
 }
