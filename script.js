@@ -1,3 +1,7 @@
+/* ========================= */
+/* script.js */
+/* ========================= */
+
 let globalData = {};
 
 fetch("data.json")
@@ -61,13 +65,20 @@ function renderServices(){
 
     let html = "";
 
-    globalData.services.forEach(s => {
+    globalData.services.forEach((s,index) => {
 
         html += `
-        <div class="card">
+        <div class="card service-card"
+        onclick="openService(${index})">
+
             <h3>${s.title}</h3>
             <p>${s.desc}</p>
             <strong>${s.price}</strong>
+
+            <div class="click-info">
+                Click for details →
+            </div>
+
         </div>
         `;
 
@@ -75,6 +86,53 @@ function renderServices(){
 
     document.getElementById("services-list").innerHTML =
     html;
+
+}
+
+/* SERVICE DETAIL */
+
+function openService(index){
+
+    const service =
+    globalData.services[index];
+
+    document.getElementById("serviceTitle")
+    .innerText = service.title;
+
+    document.getElementById("serviceDesc")
+    .innerText = service.longDesc;
+
+    document.getElementById("servicePrice")
+    .innerText = service.price;
+
+    let featuresHTML = "";
+
+    service.features.forEach(feature => {
+
+        featuresHTML += `
+        <div class="feature-item">
+            ✅ ${feature}
+        </div>
+        `;
+
+    });
+
+    document.getElementById("serviceFeatures")
+    .innerHTML = featuresHTML;
+
+    document.getElementById("serviceBtn")
+    .href =
+    `https://wa.me/628118481208?text=Halo saya tertarik dengan ${service.title}`;
+
+    document.getElementById("serviceModal")
+    .style.display = "block";
+
+}
+
+function closeService(){
+
+    document.getElementById("serviceModal")
+    .style.display = "none";
 
 }
 
@@ -127,6 +185,9 @@ window.addEventListener("click", function(event){
     const imgModal =
     document.getElementById("imgModal");
 
+    const serviceModal =
+    document.getElementById("serviceModal");
+
     if(event.target === modal){
 
         closeModal();
@@ -136,6 +197,12 @@ window.addEventListener("click", function(event){
     if(event.target === imgModal){
 
         closeImage();
+
+    }
+
+    if(event.target === serviceModal){
+
+        closeService();
 
     }
 
