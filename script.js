@@ -15,7 +15,7 @@ fetch("data.json")
 
 });
 
-/* RENDER PROBLEMS */
+/* RENDER */
 
 function renderProblems(){
 
@@ -37,8 +37,6 @@ function renderProblems(){
 
 }
 
-/* RENDER SOLUTIONS */
-
 function renderSolutions(){
 
     let html = "";
@@ -58,8 +56,6 @@ function renderSolutions(){
     html;
 
 }
-
-/* RENDER SERVICES */
 
 function renderServices(){
 
@@ -82,7 +78,7 @@ function renderServices(){
 
 }
 
-/* MODAL */
+/* CONTACT MODAL */
 
 function openModal(){
 
