@@ -1,6 +1,5 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Inter';background:#020617;color:white;}
-
 html{scroll-behavior:smooth;}
 
 .gradient-text{
@@ -10,11 +9,9 @@ background:linear-gradient(90deg,#38bdf8,#22c55e);
 }
 
 #loader{
-position:fixed;
-width:100%;height:100%;
-background:#020617;
+position:fixed;width:100%;height:100%;
 display:flex;justify-content:center;align-items:center;
-z-index:9999;
+background:#020617;z-index:9999;
 }
 
 .spinner{
@@ -29,51 +26,40 @@ animation:spin 1s linear infinite;
 
 .navbar{
 position:sticky;top:0;
-background:rgba(2,6,23,.7);
-backdrop-filter:blur(10px);
+background:rgba(2,6,23,.8);
+padding:20px;
 }
 
 .nav-container{
 display:flex;justify-content:space-between;
-padding:20px;
 }
 
-.logo{font-weight:800;color:#38bdf8;}
-
 .menu{display:flex;gap:20px;}
-
-.menu a{color:#cbd5e1;text-decoration:none;}
+.menu a{text-decoration:none;color:#cbd5e1;}
 
 .contact-btn{
-background:linear-gradient(90deg,#38bdf8,#22c55e);
-padding:10px 15px;border-radius:10px;color:black;
+background:#38bdf8;padding:10px;border-radius:10px;color:black;
 }
 
 .hero{
 min-height:100vh;
 display:flex;justify-content:center;align-items:center;
 text-align:center;
-background:radial-gradient(circle,#0f172a,#020617);
 }
 
 .hero h1{font-size:60px;}
 
-.badge{
-background:#0f172a;padding:10px;border-radius:20px;
-}
-
 .btn{
-padding:14px 28px;
+padding:14px 25px;
 background:#2563eb;
 border-radius:10px;
-text-decoration:none;color:white;
+text-decoration:none;
+color:white;
 margin:10px;
-box-shadow:0 10px 20px rgba(0,0,0,.4);
+cursor:pointer;
 }
 
-.outline{
-background:transparent;border:1px solid #38bdf8;
-}
+.outline{background:transparent;border:1px solid #38bdf8;}
 
 .section{padding:100px 20px;max-width:1100px;margin:auto;}
 
@@ -84,11 +70,10 @@ gap:20px;
 }
 
 .card{
-background:#0f172a;padding:25px;border-radius:15px;
-transition:.3s;
+background:#0f172a;
+padding:20px;
+border-radius:15px;
 }
-
-.card:hover{transform:translateY(-5px);}
 
 .portfolio-grid{
 display:grid;
@@ -96,15 +81,13 @@ grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:20px;
 }
 
-.portfolio-card img{width:100%;transition:.3s;}
+.portfolio-card img{
+width:100%;
+cursor:pointer;
+transition:.3s;
+}
 
 .portfolio-card:hover img{transform:scale(1.05);}
-
-.overlay{
-position:absolute;
-background:rgba(0,0,0,.7);
-opacity:0;
-}
 
 .cta{text-align:center;padding:100px;}
 
@@ -122,6 +105,7 @@ background:#0f172a;
 padding:30px;
 margin:10% auto;
 width:300px;
+border-radius:10px;
 }
 
 .img-modal{
@@ -129,13 +113,16 @@ display:none;
 position:fixed;
 width:100%;height:100%;
 background:black;
-justify-content:center;align-items:center;
+justify-content:center;
+align-items:center;
 }
 
 .img-modal img{max-width:90%;}
 
 .floating-wa{
-position:fixed;bottom:20px;right:20px;
+position:fixed;
+bottom:20px;right:20px;
 background:#22c55e;
-padding:15px;border-radius:50%;
+padding:15px;
+border-radius:50%;
 }
