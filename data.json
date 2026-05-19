@@ -1,53 +1,51 @@
 {
-  "job": "Power BI Developer",
-
-  "tagline": "Helping businesses automate reporting and make faster decisions using interactive dashboards",
+  "tagline": "Helping businesses automate reporting & increase profit with data",
 
   "problems": [
     {
       "title": "Manual Reporting",
-      "desc": "You spend hours creating reports every week"
+      "desc": "Spending hours creating reports"
     },
     {
-      "title": "No Insights",
-      "desc": "Your business has data but no visibility"
+      "title": "No Visibility",
+      "desc": "You have data but no insight"
     },
     {
       "title": "Slow Decisions",
-      "desc": "Management decisions become slower without dashboards"
+      "desc": "Management decisions are delayed"
     }
   ],
 
   "solutions": [
     {
-      "title": "Dashboard Automation",
-      "desc": "Automate reporting and save time"
+      "title": "Automation",
+      "desc": "Eliminate manual reporting"
     },
     {
-      "title": "Real-Time Analytics",
-      "desc": "Monitor KPI instantly"
+      "title": "Real-Time Data",
+      "desc": "Access insights instantly"
     },
     {
-      "title": "Interactive Reports",
-      "desc": "Drill-down analysis for management"
+      "title": "Interactive Dashboard",
+      "desc": "Better decision making"
     }
   ],
 
   "services": [
     {
       "title": "Basic Dashboard",
-      "desc": "1 dashboard with KPI",
-      "price": "$100"
+      "desc": "1 dashboard",
+      "price": "$150"
     },
     {
-      "title": "Business Dashboard",
-      "desc": "Multi-page dashboard",
-      "price": "$250"
+      "title": "Business Package",
+      "desc": "Multi dashboard",
+      "price": "$400"
     },
     {
-      "title": "Full BI System",
-      "desc": "Automation + analytics",
-      "price": "$500+"
+      "title": "Enterprise BI",
+      "desc": "Full system",
+      "price": "$1000+"
     }
   ]
 }
