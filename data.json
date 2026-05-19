@@ -1,15 +1,38 @@
 {
   "name": "Suroso",
   "job": "Power BI Developer",
-  "about": "Experienced in building dashboards and analytics systems.",
+  "tagline": "Transforming data into business decisions & automation systems",
+
+  "about": "I help companies turn raw data into actionable dashboards, reducing cost and increasing profit through data-driven decisions.",
+
+  "email": "suroso559@yahoo.com",
+  "whatsapp": "https://wa.me/628118481208",
+
+  "dashboard": "https://app.powerbi.com/view?r=YOUR_LINK",
+
+  "highlights": [
+    {
+      "title": "Data Automation",
+      "desc": "Reduce manual reporting up to 80%"
+    },
+    {
+      "title": "Dashboard Insight",
+      "desc": "Real-time business monitoring"
+    },
+    {
+      "title": "Decision Support",
+      "desc": "Help management take fast decisions"
+    }
+  ],
+
   "projects": [
     {
       "title": "Sales Dashboard",
-      "desc": "Analyze revenue trends & KPIs"
+      "desc": "Revenue, KPI, trend analysis"
     },
     {
-      "title": "Inventory Analytics",
-      "desc": "Stock & warehouse insights"
+      "title": "Inventory System",
+      "desc": "Stock optimization & warehouse tracking"
     }
   ]
 }
