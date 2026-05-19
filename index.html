@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Suroso | Power BI Developer</title>
 
-<meta name="description" content="Power BI Developer helping businesses automate reporting and increase profit through interactive dashboards"/>
-
-<link rel="icon" href="https://img.icons8.com/fluency/48/bar-chart.png">
-
-<link rel="stylesheet" href="style.css"/>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&display=swap" rel="stylesheet">
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
@@ -21,8 +16,10 @@
 
 <body>
 
+<!-- LOADER -->
 <div id="loader"><div class="spinner"></div></div>
 
+<!-- NAVBAR -->
 <nav class="navbar">
 <div class="nav-container">
 <div class="logo">Suroso</div>
@@ -31,97 +28,91 @@
 <a href="#solution">Solutions</a>
 <a href="#services">Services</a>
 <a href="#portfolio">Portfolio</a>
-<a href="#testimonials">Testimonials</a>
 <a class="contact-btn" onclick="openModal()">Contact</a>
 </div>
 </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
-<div class="hero-content">
+<div>
 <span class="badge">POWER BI FREELANCER</span>
-
 <h1>I Build <span id="typing"></span></h1>
-
 <p id="tagline" class="gradient-text"></p>
 
-<div class="btn-group">
+<div>
 <a href="mailto:suroso559@yahoo.com" class="btn">Hire Me</a>
 <a href="https://wa.me/628118481208" class="btn outline">WhatsApp</a>
 </div>
 </div>
 </section>
 
+<!-- PROBLEM -->
 <section class="section" id="problem">
-<h2>Business Problems</h2>
+<h2>Problems</h2>
 <div class="grid" id="problems"></div>
 </section>
 
+<!-- SOLUTION -->
 <section class="section" id="solution">
 <h2>Solutions</h2>
 <div class="grid" id="solutions"></div>
 </section>
 
+<!-- SERVICES -->
 <section class="section" id="services">
 <h2>Services</h2>
 <div class="grid" id="services-list"></div>
 </section>
 
+<!-- PORTFOLIO -->
 <section class="section" id="portfolio">
 <h2>Portfolio</h2>
+
 <div class="portfolio-grid">
+
 <div class="portfolio-card">
 <img src="https://blog.coupler.io/wp-content/uploads/2025/05/seo-dashboard-power-bi-1536x863.png" onclick="openImage(this.src)">
-<div class="overlay">Sales Dashboard</div>
 </div>
 
 <div class="portfolio-card">
 <img src="https://i.ytimg.com/vi/GIPiHhDtasM/maxresdefault.jpg" onclick="openImage(this.src)">
-<div class="overlay">Financial Dashboard</div>
 </div>
 
 <div class="portfolio-card">
 <img src="https://blog.coupler.io/wp-content/uploads/2025/04/all-in-one-marketing-dashboard-power-bi-1536x864.png" onclick="openImage(this.src)">
-<div class="overlay">Marketing Dashboard</div>
 </div>
+
 </div>
 </section>
 
-<section class="section" id="testimonials">
-<h2>Testimonials</h2>
-<div class="grid">
-<div class="card">
-<p>“Reporting time decreased by 80%”</p>
-<strong>- Retail Company</strong>
-</div>
-<div class="card">
-<p>“Helped management make faster decisions”</p>
-<strong>- Manufacturing</strong>
-</div>
-</div>
-</section>
-
+<!-- CTA -->
 <section class="cta">
 <h2>Turn Your Data Into Profit</h2>
 <p>Build dashboards that drive decisions</p>
-<a onclick="openModal()" class="btn big">Start Project</a>
+
+<a onclick="sendWhatsApp()" class="btn big">Start Project</a>
 </section>
 
+<!-- FOOTER -->
 <footer class="footer">
 <p>© 2026 Suroso</p>
 </footer>
 
+<!-- FLOAT WA -->
 <a href="https://wa.me/628118481208" class="floating-wa">💬</a>
 
+<!-- CONTACT MODAL -->
 <div id="modal" class="modal">
 <div class="modal-content">
 <span class="close" onclick="closeModal()">&times;</span>
 <h2>Contact</h2>
-<p>WhatsApp: 08118481208</p>
 <p>Email: suroso559@yahoo.com</p>
+<p>Phone: +6281 1848 1208</p>
 </div>
 </div>
 
+<!-- IMAGE MODAL -->
 <div id="imgModal" class="img-modal" onclick="closeImage()">
 <img id="imgPreview">
 </div>
